@@ -14,7 +14,7 @@ a #logo {text-decoration:none;}
 #logo h3{padding-top:8px; color:#fff;}
 #logo h3:hover{}
 nav{padding:8px; float:right;}
-nav a {padding-right:20px; color:#ccc;}
+nav a {padding-right:20px; color:#ccc; background:lime;}
 nav a:hover{background:lime;}
 
 
