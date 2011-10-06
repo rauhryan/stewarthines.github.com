@@ -4,6 +4,13 @@ html{background:#fff;}
 body{font-family:'Helvetica', 'Arial', sans-serif; font-size:14px; line-height:24px; color:#333;}
 #home{margin-top:40px;}
 
+/*nav*/
+#navHome{height:45px; background:#666;}
+nav{padding:10px; background:#333;}
+
+
+
+
 /*text - specific elements*/
 h1,h2,h3,h4,h5 {font-weight:bold; font-color:#333; margin-bottom:20px;}
 h6{margin-bottom:5px;}
