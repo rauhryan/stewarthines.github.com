@@ -16,7 +16,7 @@ a #logo {text-decoration:none;}
 nav{padding:8px; float:right;}
 nav a {color:#ccc; padding:20px 20px 3px 20px;}
 nav a:hover{background:#666; border-bottom:2px solid #b4012b; color:#fff; }
-
+.active{background:#666; border-bottom:2px solid #0b4670; color:#fff; }
 
 
 

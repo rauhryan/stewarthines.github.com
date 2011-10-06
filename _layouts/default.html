@@ -5,6 +5,12 @@
 	<title>Stew's Sandbox</title>
 	<link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="styles/960_12_col.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script>
+	   jQuery(function($){
+	       $('#' + '{{ page.active }}').addClass('active');
+	   });
+	</script>
 </head>
 <body>
 	<div  id="navHome">
@@ -14,9 +20,9 @@
 			</div>	
 			<div class="grid_6">
 				<nav>
-					<a href="/lessons.html">Lessons</a>
-					<a href="/blog">Blog</a>
-					<a href="/sandbox.html">Sandbox</a>
+					<a href="/lessons.html" id="lessons">Lessons</a>
+					<a href="/blog" id="blog">Blog</a>
+					<a href="/sandbox.html" id="sandbox">Sandbox</a>
 				</nav>
 			</div>
 		</div>
