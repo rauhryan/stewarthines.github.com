@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Stew's Sandbox</title>
+	<link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="styles/960_12_col.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="home" class="container_12">
+		<div class="grid_8">
+			<h1 class="red">Stew's Sandbox</h1>
+			<p>
+				This page is my play page. It'll have lots of cool stuff. It's main goal is to help me learn more CSS, HTML, & JavaScript. There will be pictures of motorcycles. So, in review, this is simply a test facility or proving grounds for the awesomeness of code. 
+			</p>
+		</div>
+		<div class="grid_4">
+			<img src="images/triumphscramblerred.jpg" width="275" height="221" alt="Triumphscramblerred">
+		</div>
+		<div class="grid_12">
+			<h5 class="blue">Icon in a TextBox</h5 class="blue">
+		</div>
+		<div class="grid_6">
+			<h6>Description:</h6>
+			<p>
+				First up on the sandbox list is an old nemesis, the ol' icon inside of a text box thing. We use these all over fieldbook. I need to know how they work and how to make one. That's what i'm going to do here. Jake was kind enough to provide a great example for me..
+			</p>
+		</div>
+		<div id="textBoxIcon" class="grid_6">
+			<h6>Examples:</h6>
+			<input type="text" placeholder="Normal TextBox" />
+			<div class="datePicker">
+				<input type="text" placeholder="TextBox with an Icon" class="dateInput"  />
+				<a href="#" onclick="alert ('clicked');" class="dateA"><img src="http://s3.amazonaws.com/wimgo/images/wimgo-search-date-popup-icon.gif" alt=""></a>
+			</div>
+		</div>
+		<div class="grid_6">
+			<h6>What I Did:</h6>
+			<p>
+				I made a basic text input box and styled it up all fancy like with CSS3 transitions. These only work in webkit because i'm lazy. If i ever expand this i'll build on it and make it cross-browser. Anyway, I built another textbox inside of a div. I used absolute positioning to build out the box and then put the a link with an image inside of it in the textbox.
+			</p>
+			<img src="images/triumphscramblerblue.jpg" width="275" height="242" alt="Triumphscramblerblue">
+		</div>
+		<div class="grid_6">
+			<h6>Code!</h6>
+			<p>
+				HTML:
+			</p>
+				<script src="https://gist.github.com/1267545.js"> </script>
+			<p>
+				CSS:
+			</p>
+			<script src="https://gist.github.com/1267550.js"> </script>
+		</div>
+		&nbsp;
+		<div class="grid_12">
+			<h5 class="red">TextBox with an Icon with a Button</h5>
+		</div>
+		<div class="grid_6">
+			<h6>Description:</h6>
+			<p>
+				Rauh presented me with a very interesting & challenging problem. He had an auto complete box that had a button next to it. When tabbed to the button had a goofy outline. The button was built with a span & an a link. The a link had an icon in it. I'll try to duplicate and solve the problem now. It should be noted that Rauh's example is getting some of my styles so it looks goofy. I'll fix it. but the icon at the end & the search icon don't line up thanks to my own styles.
+			</p>
+		</div>
+		<div class="grid_6">
+			<h6>Rauh's Original</h6>
+			<div class="well autopicker" data-:="{&quot;url&quot;:&quot;/search/contacts&quot;,&quot;template&quot;:&quot;${FullName} at ${PrimarySite.Name}&quot;}">
+				<div class="clearfix">
+					<div class="autocomplete-wrapper input">
+						<input type="text" name="TargetContactValue" placeholder="Contact" autocomplete="off" class="autocomplete form-text"> 
+						<img src="http://cl.ly/0v3U3g3f0Y1G1B010Q2F/search-btn.png" alt="GO"> 
+						<a href="/contacts/new" class="button button-add"><span>Add</span></a><input type="hidden" name="TargetContact">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
