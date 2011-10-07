@@ -39,11 +39,15 @@ input:focus{border-color:#5CA8E7; outline:none; -webkit-box-shadow:0px 0px 7px #
 /*index*/
 #side{margin-top:30px;}
 #opening {margin-top:70px;}
-.sideNav {list-style:none; margin-top:25px; padding-left:62px;}
+.sideNav {list-style:none; margin-top:20px; padding-left:62px;}
 .sideNav li {padding:5px 0;}
 .sideNav li a:hover{opacity:.8;}
 #big{font-size:80px; font-weight:normal; color:#888;}
 #opening p {font-size:18px; line-height:32px; color:#888; padding-top:30px;}
+#title {font-weight:normal; color:#888; text-align:center;}
+#work a:hover{opacity:.8;}
+#top {padding-top:20px;}
+#bottom {padding-top:20px;}
 
 
 
