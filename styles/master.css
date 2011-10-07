@@ -10,11 +10,11 @@ a{text-decoration:none; font-weight:bold;}
         box-shadow:0px 3px 4px #888;}
 a #logo {text-decoration:none;}
 #logo h3{padding-top:8px; color:#fff;}
-#logo h3:hover{}
+#logo h3:hover{opacity:.8;}
 nav{padding:8px; float:right;}
-nav a {color:#ccc; padding:20px 20px 3px 20px;}
-nav a:hover{background:#666; border-bottom:2px solid #b4012b; color:#fff; }
-.active{background:#666; border-bottom:2px solid #0b4670; color:#fff; }
+nav a {color:#888; padding:20px 20px 3px 20px;}
+nav a:hover{background:#323232; border-bottom:14px solid #e14c2f; color:#ccc; }
+.active{background:#323232; border-bottom:14px solid #2a94fe; color:#fff; }
 /*text - specific elements*/
 h1,h2,h3,h4,h5 {font-weight:bold; font-color:#333; margin-bottom:20px;}
 h6{margin-bottom:5px;}
@@ -36,99 +36,16 @@ input:hover{border-color:#666; -webkit-box-shadow:0px 0px 5px #ccc;}
 input:focus{border-color:#5CA8E7; outline:none; -webkit-box-shadow:0px 0px 7px #78C5EC; }
 ::-webkit-input-placeholder { color:#ccc; font-style:italic; }
 
+/*index*/
+#side{margin-top:30px;}
+#opening {margin-top:70px;}
+.sideNav {list-style:none; margin-top:25px; padding-left:62px;}
+.sideNav li {padding:5px 0;}
+.sideNav li a:hover{opacity:.8;}
+#big{font-size:80px; font-weight:normal; color:#888;}
+#opening p {font-size:18px; line-height:32px; color:#888; padding-top:30px;}
 
-/*DatePicker Icon*/
-.datePicker {position:relative;}
-a.dateA {display:block; position:absolute; top:15px; right:-10px;}
 
-/*The Following applies only to Rauh's Example*/
-.autopicker {
-			position: relative;   
-			width:500px;
-		}
 
-		.well {
-			background-color: whiteSmoke;
-			margin-bottom: 20px;
-			padding: 19px;
-			min-height: 20px;
-			border: 1px solid #EEE;
-			border: 1px solid rgba(0, 0, 0, 0.05);
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
-			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-			-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-			border-image: initial;
-		}
 
-		.clearfix {
-			margin-bottom: 18px;
-			zoom: 1;   
-		}
-		form .clearfix::before, form .clearfix::after {
-			display: table;
-			content: "";
-			zoom: 1;
-		}
-		form .clearfix::after {
-			clear: both;
-		}
-		form .clearfix::before, form .clearfix::after {
-			display: table;
-			content: "";
-			zoom: 1;
-		}
-		label {
-			display: block;
-			float: none;
-			width: auto;
-			font-weight: bold;
-			text-align: left;
-			line-height: 20px;
-			padding-top: 0;
-		}
-		label {
-			padding-top: 6px;
-			font-size: 13px;
-			line-height: 18px;
-			float: left;
-			width: 130px;
-			text-align: right;
-			color: #404040;
-		}
-		label, input, select, textarea {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 13px;
-			font-weight: normal;
-			line-height: normal;
-		}
-		.autocomplete-wrapper input {
-			width: 460px;
-			height:20px;
-		}
-		.autopicker .autocomplete-wrapper img {
-			position: absolute;
-			top: 38px;
-			right: 50px;
-		}
-		.autopicker .button-add, .autopicker a.button-add, .autopicker .button-add span {
-			text-indent: -9999em;
-			background: none;
-			height: 16px;
-			width: 16px;
-			border: 0;
-			position: absolute;
-			right: 8px;
-			top: 20px;
-			/*border-image: initial;*/
-		}
-		.autopicker .button-add span, .autopicker a.button-add span, .autopicker .button-add span  {
-			background: url(http://cl.ly/0l1u0B2W2c1x2A2H2n1i/add.png) left top no-repeat;
-			margin: 0;
-			padding: 0;
-		}
-		.button-add, span{background:blue;}
-		.button-add, span:focus{outline-color:red;}
-		/*.button-add:focus{outline:none;} this kills the outline*/
+

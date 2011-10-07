@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css" media="screen">
+.autopicker {
+			position: relative;   
+			width:500px;
+		}
+
+		.well {
+			background-color: whiteSmoke;
+			margin-bottom: 20px;
+			padding: 19px;
+			min-height: 20px;
+			border: 1px solid #EEE;
+			border: 1px solid rgba(0, 0, 0, 0.05);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+			-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+			border-image: initial;
+		}
+
+		.clearfix {
+			margin-bottom: 18px;
+			zoom: 1;   
+		}
+		form .clearfix::before, form .clearfix::after {
+			display: table;
+			content: "";
+			zoom: 1;
+		}
+		form .clearfix::after {
+			clear: both;
+		}
+		form .clearfix::before, form .clearfix::after {
+			display: table;
+			content: "";
+			zoom: 1;
+		}
+		label {
+			display: block;
+			float: none;
+			width: auto;
+			font-weight: bold;
+			text-align: left;
+			line-height: 20px;
+			padding-top: 0;
+		}
+		label {
+			padding-top: 6px;
+			font-size: 13px;
+			line-height: 18px;
+			float: left;
+			width: 130px;
+			text-align: right;
+			color: #404040;
+		}
+		label, input, select, textarea {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 13px;
+			font-weight: normal;
+			line-height: normal;
+		}
+		.autocomplete-wrapper input {
+			width: 490px;
+			height:20px;
+		}
+		.autopicker .autocomplete-wrapper img {
+			position: absolute;
+			top: 22px;
+			right: 30px;
+		}
+		.autopicker .button-add, .autopicker a.button-add, .autopicker .button-add span {
+			text-indent: -9999em;
+			background: none;
+			height: 16px;
+			width: 16px;
+			border: 0;
+			position: absolute;
+			right: 3px;
+			top: 12px;
+			/*border-image: initial;*/
+		}
+		.autopicker .button-add span, .autopicker a.button-add span, .autopicker .button-add span  {
+			background: url(http://cl.ly/0l1u0B2W2c1x2A2H2n1i/add.png) left top no-repeat;
+			margin: 0;
+			padding: 0;
+		}
+		.button-add, span{background:blue;}
+		.button-add, span:focus{outline-color:red;}
+		/*.button-add:focus{outline:none;} this kills the outline*/ 
+		</style>
+	</head>
+	<body id="" onload="">
+		<div class="well autopicker" data-:="{&quot;url&quot;:&quot;/search/contacts&quot;,&quot;template&quot;:&quot;${FullName} at ${PrimarySite.Name}&quot;}">
+			<div class="clearfix">
+				<div class="autocomplete-wrapper input">
+					<input type="text" name="TargetContactValue" placeholder="Contact" autocomplete="off" class="autocomplete form-text"> 
+					<img src="http://cl.ly/0v3U3g3f0Y1G1B010Q2F/search-btn.png" alt="GO"> 
+					<a href="/contacts/new" class="button button-add"><span>Add</span></a><input type="hidden" name="TargetContact">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

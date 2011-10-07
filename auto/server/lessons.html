@@ -5,11 +5,10 @@
 	<title>Stew's Sandbox</title>
 	<link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="styles/960_12_col.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="styles/sandbox.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script>
 	   jQuery(function($){
-	       $('#' + '{{ page.active }}').addClass('active');
+	       $('#' + 'lessons').addClass('active');
 	   });
 	</script>
 </head>
@@ -26,9 +25,13 @@
 					<a href="/sandbox.html" id="sandbox">Sandbox</a>
 				</nav>
 			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
-    {{ content }}
+    <div class="container_12" id="name">
+	<div class="grid_12">
+		This is the lessons page
+	</div>
+</div>
+
 </body>
 </html>
