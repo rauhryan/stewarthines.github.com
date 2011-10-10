@@ -39,9 +39,18 @@ input:focus{border-color:#5CA8E7; outline:none; -webkit-box-shadow:0px 0px 7px #
 /*index*/
 #side{margin-top:30px;}
 #opening {margin-top:70px;}
-.sideNav {list-style:none; margin-top:20px; padding-left:62px;}
+.sideNav {list-style:none; margin-top:20px; padding-left:15px;}
 .sideNav li {padding:5px 0;}
 .sideNav li a:hover{opacity:.8;}
+.hoverTitle, .link {display:inline-block; vertical-align:middle;}
+.hoverTitle{vertical-align:middle;opacity:.6; padding:5px;}
+.hoverTitle span{opacity:1; color: #fff;}
+.hide{display:none;}
+#gmail{background:#666;}
+#twitter{background:#2a94fe;}
+#github{background:#000;}
+#zerply{background:#9dbc7a;}
+
 #big{font-size:80px; font-weight:normal; color:#888;}
 #opening p {font-size:18px; line-height:32px; color:#888; padding-top:30px;}
 #title {font-weight:normal; color:#888; text-align:center; margin-bottom:10px;}
