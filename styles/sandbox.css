@@ -2,9 +2,30 @@
 .datePicker {position:relative;}
 a.dateA {display:block; position:absolute; top:15px; right:-10px;}
 
+/*Hipster Date*/
+.date {
 
-
-
+    color: #ccc;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    overflow: hidden;
+    padding:10px;
+    text-transform: uppercase;
+    }
+    
+    .date div {float: left;}
+    
+    .date span {
+        display: inline-block;
+        vertical-align: middle;
+        }
+    
+    .day-name {-webkit-transform: rotate(-90deg); margin-left:5px;}
+    .day-num {font-size: 40px;}
+    
+    .date .month,
+    .date .year {display: block; padding:3px 5px;}
 
 /*The Following applies only to Rauh's Example*/
 .autopicker {
@@ -94,6 +115,5 @@ a.dateA {display:block; position:absolute; top:15px; right:-10px;}
 			margin: 0;
 			padding: 0;
 		}
-		.button-add, span{background:blue;}
-		.button-add, span:focus{outline-color:red;}
+
 		/*.button-add:focus{outline:none;} this kills the outline*/
