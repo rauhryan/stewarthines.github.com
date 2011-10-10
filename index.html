@@ -4,13 +4,13 @@
 <script type="text/javascript">
 $(document).ready(function(){
     $(".link").hover(
-        function() {
-            $(".hoverTitle").fadeIn(100);
-        },
-        function() {
-            $(".hoverTitle").fadeOut(200);
-        }
-    );
+	    function() {
+	        $(this).siblings(".hoverTitle").fadeIn(100);
+	    },
+	    function() {
+	        $(this).siblings(".hoverTitle").fadeOut(200);
+	    }
+	);
 });
 </script>
 
@@ -40,7 +40,9 @@ $(document).ready(function(){
 		</p>
 	</div>
 	<div class="grid_12">
-		<h2 id="title">Featured Work:</h2>
+		<div class="title">
+			<h2 id="title">Featured Work:</h2>
+		</div>
 	</div>
 	<div id="work">
 		<div id="top">
