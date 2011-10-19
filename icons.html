@@ -1,0 +1,1198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>ui-icons</title>
+		<link rel="stylesheet" href="ui-icons.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+
+			function goToByScroll(id){
+				$('html,body').animate({scrollTop: $(id).offset().top},'slow');			
+			}
+			
+			
+			
+			$(document).ready(function() {
+				var oldColor = $("#colorSelect").children("option:selected").val();
+				var newColor = oldColor;
+				
+				$("#colorSelect").change(function(){
+					newColor = $("#colorSelect").children("option:selected").val();					
+					$(".ui-icon").addClass(newColor).removeClass(oldColor);
+					oldColor = newColor;
+					
+				});	
+				$("nav a, .top-link").click(function(e){
+					e.preventDefault();
+					var elem = $(this);
+					goToByScroll(elem.attr("href"));					
+					return false;
+				});
+						
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<section id="home">
+				<h1>ui-icons for Fieldbook</h1>
+				<p>
+					These icons have been saved in all states & colors that might be needed. The icons are built in Adobe Illustrator CS5 on a 512x512px document, then exported as transparent pngs. The file structure is color name _ color code. So black would be <i>black_000.png</i>. The icon naming convention is thus: ui-icon denotes that the class is an icon. This is followed by a detailed description of the icon using dashes for spaces. So <i>ui-icon-folder-open</i> tells us that we are dealing with an icon that is an open folder. Icons will fall into groups. We need to keep groups in mind as we add icons. This will help us stay organized, stop icon soup, & help us remember what, where & how to use all of our icons before we make new ones. 
+				</p>
+				&nbsp;
+				<p>
+					<b>Choose a State or Color:</b>
+				</p>
+				<form action="index_submit" method="get" accept-charset="utf-8">
+					<select name="menu" id="colorSelect" size="1" style="width:250px;" onchange>
+						<option value="ui-icon-gray" id="gray">Default Gray - #666</option>
+						<option value="ui-icon-black" id="black">Black - #000</option>
+						<option value="ui-icon-dark-gray" id="darkGray">Dark Gray - #333</option>
+						<option value="ui-icon-light-gray" id="lightGray">Light Gray - #ccc</option>
+						<option value="ui-icon-white" id="white">White - #fff</option>
+						<option value="ui-icon-blue" id="blue">Fieldbook Blue - #2a94fe</option>
+						<option value="ui-icon-dark-blue" id="darkBlue">Dark Blue - #1c62a9</option>
+						<option value="ui-icon-red" id="red">Red - #e14c2f</option>
+						<option value="ui-icon-dark-red" id="darkRed">Dark Red - #8e1903</option>
+						<option value="ui-icon-green" id="green">Green - #58a9e</option>
+						<option value="ui-icon-dark-green" id="darkGreen">Dark Green - #327c2b</option>
+						<option value="ui-icon-highlight " id="yellow">ui-state-highlight - #ffdd9e</option>
+					</select>	
+				</form>
+				<nav>
+					<p>
+						<b>Choose a Section:</b>
+					</p>
+					<a href="#carat">Carat Arrows</a>
+					<a href="#triangles">Triangles</a>
+					<a href="#arrow">Thin Arrows</a>
+					<a href="#thickArrow">Thick Arrows</a>
+					<a href="#turns">Arrow Turns</a>
+					<a href="#window">Window Controls</a>
+					<a href="#media">Media</a>
+					<a href="#tools">Tools</a>
+					<a href="#graphs">Graphs</a>
+					<a href="#bullets">Bullets & Symbols</a>
+					<a href="#audio">Audio Controls</a>
+					<a href="#power">Power</a>
+				</nav>
+			</section>	
+			<section id="defaultIcons">
+				<section id="carat">
+					<div>
+						<h3>Carat Arrows</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-n">
+						<div class="icon-name">
+							ui-icon-carat-1-n
+						</div>
+						<span class="ui-icon ui-icon-carat-1-n" title="ui-icon-carat-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-ne">
+						<div class="icon-name">
+							ui-icon-carat-1-ne
+						</div>
+						<span class="ui-icon ui-icon-carat-1-ne" title="ui-icon-carat-1-ne">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-e">
+						<div class="icon-name">
+							ui-icon-carat-1-e
+						</div>
+						<span class="ui-icon ui-icon-carat-1-e" title="ui-icon-carat-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-se">
+						<div class="icon-name">
+							ui-icon-carat-1-se
+						</div>
+						<span class="ui-icon ui-icon-carat-1-se" title="ui-icon-carat-1-se">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-s">
+						<div class="icon-name">
+							ui-icon-carat-1-s
+						</div>
+						<span class="ui-icon ui-icon-carat-1-s" title="ui-icon-carat-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-sw">
+						<div class="icon-name">
+							ui-icon-carat-1-sw
+						</div>
+						<span class="ui-icon ui-icon-carat-1-sw" title="ui-icon-carat-1-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-w">
+						<div class="icon-name">
+							ui-icon-carat-1-w
+						</div>
+						<span class="ui-icon ui-icon-carat-1-w" title="ui-icon-carat-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-1-nw">
+						<div class="icon-name">
+							ui-icon-carat-1-nw
+						</div>
+						<span class="ui-icon ui-icon-carat-1-nw" title="ui-icon-carat-1-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-2-n-s">
+						<div class="icon-name">
+							ui-icon-carat-2-n-s
+						</div>
+						<span class="ui-icon ui-icon-carat-2-n-s" title="ui-icon-carat-2-n-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-carat-2-e-w">
+						<div class="icon-name">
+							ui-icon-carat-1-e-w
+						</div>
+						<span class="ui-icon ui-icon-carat-2-e-w" title="ui-icon-carat-2-e-w">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="triangles">
+					<div>
+						<h3>Triangles</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-n">
+						<div class="icon-name">
+							ui-icon-triangle-1-n
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-n" title="ui-icon-triangle-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-ne">
+						<div class="icon-name">
+							ui-icon-triangle-1-ne
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-ne" title="ui-icon-triangle-1-ne">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-e">
+						<div class="icon-name">
+							ui-icon-triangle-1-e
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-e" title="ui-icon-triangle-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-se">
+						<div class="icon-name">
+							ui-icon-triangle-1-se
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-se" title="ui-icon-triangle-1-se">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-s">
+						<div class="icon-name">
+							ui-icon-triangle-1-s
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-s" title="ui-icon-triangle-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-sw">
+						<div class="icon-name">
+							ui-icon-triangle-1-sw
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-sw" title="ui-icon-triangle-1-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-w">
+						<div class="icon-name">
+							ui-icon-triangle-1-w
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-w" title="ui-icon-triangle-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-1-nw">
+						<div class="icon-name">
+							ui-icon-triangle-1-nw
+						</div>
+						<span class="ui-icon ui-icon-triangle-1-nw" title="ui-icon-triangle-1-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-2-n-s">
+						<div class="icon-name">
+							ui-icon-triangle-2-n-s
+						</div>
+						<span class="ui-icon ui-icon-triangle-2-n-s" title="ui-icon-triangle-2-n-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-triangle-2-e-w">
+						<div class="icon-name">
+							ui-icon-triangle-2-e-w
+						</div>
+						<span class="ui-icon ui-icon-triangle-2-e-w" title="ui-icon-triangle-2-e-w">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="arrow">
+					<div>
+						<h3>Thin Arrows</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-n">
+						<div class="icon-name">
+							ui-icon-arrow-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-n" title="ui-icon-arrow-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-ne">
+						<div class="icon-name">
+							ui-icon-arrow-1-ne
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-ne" title="ui-icon-arrow-1-ne">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-e">
+						<div class="icon-name">
+							ui-icon-arrow-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-e" title="ui-icon-arrow-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-se">
+						<div class="icon-name">
+							ui-icon-arrow-1-se
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-se" title="ui-icon-arrow-1-se">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-s">
+						<div class="icon-name">
+							ui-icon-arrow-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-s" title="ui-icon-arrow-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-sw">
+						<div class="icon-name">
+							ui-icon-arrow-1-sw
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-sw" title="ui-icon-arrow-1-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-w">
+						<div class="icon-name">
+							ui-icon-arrow-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-w" title="ui-icon-arrow-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-1-nw">
+						<div class="icon-name">
+							ui-icon-arrow-1-nw
+						</div>
+						<span class="ui-icon ui-icon-arrow-1-nw" title="ui-icon-arrow-1-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-2-n-s">
+						<div class="icon-name">
+							ui-icon-arrow-2-n-s
+						</div>
+						<span class="ui-icon ui-icon-arrow-2-n-s" title="ui-icon-arrow-2-n-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-2-ne-sw">
+						<div class="icon-name">
+							ui-icon-arrow-2-ne-sw
+						</div>
+						<span class="ui-icon ui-icon-arrow-2-ne-sw" title="ui-icon-arrow-2-ne-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-2-e-w">
+						<div class="icon-name">
+							ui-icon-arrow-2-e-w
+						</div>
+						<span class="ui-icon ui-icon-arrow-2-e-w" title="ui-icon-arrow-2-e-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-2-se-nw">
+						<div class="icon-name">
+							ui-icon-arrow-2-se-nw
+						</div>
+						<span class="ui-icon ui-icon-arrow-2-se-nw" title="ui-icon-arrow-2-se-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowstop-1-n">
+						<div class="icon-name">
+							ui-icon-arrowstop-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrowstop-1-n" title="ui-icon-arrowstop-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowstop-1-e">
+						<div class="icon-name">
+							ui-icon-arrowstop-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrowstop-1-e" title="ui-icon-arrowstop-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowstop-1-s">
+						<div class="icon-name">
+							ui-icon-arrowstop-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowstop-1-s" title="ui-icon-arrowstop-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowstop-1-w">
+						<div class="icon-name">
+							ui-icon-arrowstop-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowstop-1-w" title="ui-icon-arrowstop-1-w">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="thickArrow">
+					<div>
+						<h3>Thick Arrows</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-n">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-n" title="ui-icon-arrowthick-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-ne">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-ne
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-ne" title="ui-icon-arrowthick-1-ne">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-e">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-e" title="ui-icon-arrowthick-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-se">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-se
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-se" title="ui-icon-arrowthick-1-se">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-s">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-s" title="ui-icon-arrowthick-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-sw">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-sw
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-sw" title="ui-icon-arrowthick-1-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-w">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-w" title="ui-icon-arrowthick-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-1-nw">
+						<div class="icon-name">
+							ui-icon-arrowthick-1-nw
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-1-nw" title="ui-icon-arrowthick-1-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-2-n-s">
+						<div class="icon-name">
+							ui-icon-arrowthick-2-n-s
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-2-n-s" title="ui-icon-arrowthick-2-n-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-2-ne-sw">
+						<div class="icon-name">
+							ui-icon-arrowthick-2-ne-sw
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-2-ne-sw" title="ui-icon-arrowthick-2-ne-sw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-2-e-w">
+						<div class="icon-name">
+							ui-icon-arrowthick-2-e-w
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-2-e-w" title="ui-iconthick-arrow-2-e-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthick-2-se-nw">
+						<div class="icon-name">
+							ui-icon-arrowthick-2-se-nw
+						</div>
+						<span class="ui-icon ui-icon-arrowthick-2-se-nw" title="ui-icon-arrowthick-2-se-nw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthickstop-1-n">
+						<div class="icon-name">
+							ui-icon-arrowthickstop-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrowthickstop-1-n" title="ui-icon-arrowthickstop-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthickstop-1-e">
+						<div class="icon-name">
+							ui-icon-arrowthickstop-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrowthickstop-1-e" title="ui-icon-arrowthickstop-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthickstop-1-s">
+						<div class="icon-name">
+							ui-icon-arrowthickstop-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowthickstop-1-s" title="ui-icon-arrowthickstop-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowthickstop-1-w">
+						<div class="icon-name">
+							ui-icon-arrowthickstop-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowthickstop-1-w" title="ui-icon-arrowthickstop-1-w">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="turns">
+					<div>
+						<h3>Arrow Turns</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturnthick-1-w">
+						<div class="icon-name">
+							ui-icon-arrowreturnthick-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowreturnthick-1-w" title="ui-icon-arrowreturnthick-1-w">&nbsp;</span>&nbsp;
+					</div>
+				
+					<div class="icon-container" id="ui-icon-arrowreturnthick-1-n">
+						<div class="icon-name">
+							ui-icon-arrowreturnthick-1-n 
+						</div>
+						<span class="ui-icon ui-icon-arrowreturnthick-1-n" title="ui-icon-arrowreturnthick-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturnthick-1-e">
+						<div class="icon-name">
+							ui-icon-arrowreturnthick-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrowreturnthick-1-e" title="ui-icon-arrowreturnthick-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturnthick-1-s">
+						<div class="icon-name">
+							ui-icon-arrowreturnthick-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowreturnthick-1-s" title="ui-icon-arrowreturnthick-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturn-1-w">
+						<div class="icon-name">
+							ui-icon-arrowreturn-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowreturn-1-w" title="ui-icon-arrowreturn-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturn-1-n">
+						<div class="icon-name">
+							ui-icon-arrowreturn-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrowreturn-1-n" title="ui-icon-arrowreturn-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturn-1-e">
+						<div class="icon-name">
+							ui-icon-arrowreturn-1-e
+						</div>
+						<span class="ui-icon ui-icon-arrowreturn-1-e" title="ui-icon-arrowreturn-1-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowreturn-1-s">
+						<div class="icon-name">
+							ui-icon-arrowreturn-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowreturn-1-s" title="ui-icon-arrowreturn-1-s">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowrefresh-1-w">
+						<div class="icon-name">
+							ui-icon-arrowrefresh-1-w
+						</div>
+						<span class="ui-icon ui-icon-arrowrefresh-1-w" title="ui-icon-arrowrefresh-1-w">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowrefresh-1-n">
+						<div class="icon-name">
+							ui-icon-arrowrefresh-1-n
+						</div>
+						<span class="ui-icon ui-icon-arrowrefresh-1-n" title="ui-icon-arrowrefresh-1-n">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowrefresh-1-e ">
+						<div class="icon-name">
+							ui-icon-arrowrefresh-1-e 
+						</div>
+						<span class="ui-icon ui-icon-arrowrefresh-1-e " title="ui-icon-arrowrefresh-1-e ">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrowrefresh-1-s">
+						<div class="icon-name">
+							ui-icon-arrowrefresh-1-s
+						</div>
+						<span class="ui-icon ui-icon-arrowrefresh-1-s" title="ui-icon-arrowrefresh-1-s">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="window">
+					<div>
+						<h3>Window Controls</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-4">
+						<div class="icon-name">
+							ui-icon-arrow-4
+						</div>
+						<span class="ui-icon ui-icon-arrow-4" title="ui-icon-arrow-4">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-arrow-4-diag">
+						<div class="icon-name">
+							ui-icon-arrow-4-diag
+						</div>
+						<span class="ui-icon ui-icon-arrow-4-diag" title="ui-icon-arrow-4-diag">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-extlink">
+						<div class="icon-name">
+							ui-icon-extlink
+						</div>
+						<span class="ui-icon ui-icon-extlink" title="ui-icon-ui-icon-extlink">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-newwin">
+						<div class="icon-name">
+							ui-icon-newwin
+						</div>
+						<span class="ui-icon ui-icon-newwin" title="ui-icon-newwin">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-refresh">
+						<div class="icon-name">
+							ui-icon-refresh
+						</div>
+						<span class="ui-icon ui-icon-refresh" title="ui-icon-refresh">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-shuffle ">
+						<div class="icon-name">
+							ui-icon-shuffle 
+						</div>
+						<span class="ui-icon ui-icon-shuffle " title="ui-icon-shuffle ">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-transfer-e-w">
+						<div class="icon-name">
+							ui-icon-transfer-e-w
+						</div>
+						<span class="ui-icon ui-icon-transfer-e-w" title="ui-icon-transfer-e-w">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="media">
+					<div>
+						<h3>Media</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-folder-collapsed">
+						<div class="icon-name">
+							ui-icon-folder-collapsed
+						</div>
+						<span class="ui-icon ui-icon-folder-collapsed" title="ui-icon-folder-collapsed">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-folder-open">
+						<div class="icon-name">
+							ui-icon-folder-open
+						</div>
+						<span class="ui-icon ui-icon-folder-open" title="ui-icon-folder-open">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-folder-copy">
+						<div class="icon-name">
+							ui-icon-folder-copy
+						</div>
+						<span class="ui-icon ui-icon-folder-copy" title="ui-icon-folder-copy">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-document">
+						<div class="icon-name">
+							ui-icon-document
+						</div>
+						<span class="ui-icon ui-icon-document" title="ui-icon-document">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-document-landscape">
+						<div class="icon-name">
+							ui-icon-document-landscape
+						</div>
+						<span class="ui-icon ui-icon-document-landscape" title="ui-icon-document-landscape">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-document-b">
+						<div class="icon-name">
+							ui-icon-document-b
+						</div>
+						<span class="ui-icon ui-icon-document-b" title="ui-icon-document-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-document-b-landscape">
+						<div class="icon-name">
+							ui-icon-document-b-landscape
+						</div>
+						<span class="ui-icon ui-icon-document-b-landscape" title="ui-icon-document-b-landscape">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-copy">
+						<div class="icon-name">
+							ui-icon-copy
+						</div>
+						<span class="ui-icon ui-icon-copy" title="ui-icon-copy">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-clipboard">
+						<div class="icon-name">
+							ui-icon-clipboard
+						</div>
+						<span class="ui-icon ui-icon-clipboard" title="ui-icon-clipboard">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-book">
+						<div class="icon-name">
+							ui-icon-book
+						</div>
+						<span class="ui-icon ui-icon-book" title="ui-icon-book">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-mail">
+						<div class="icon-name">
+							ui-icon-mail
+						</div>
+						<span class="ui-icon ui-icon-mail" title="ui-icon-mail">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-mail-open">
+						<div class="icon-name">
+							ui-icon-mail-open
+						</div>
+						<span class="ui-icon ui-icon-mail-open" title="ui-icon-mail-open">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-image">
+						<div class="icon-name">
+							ui-icon-image
+						</div>
+						<span class="ui-icon ui-icon-image" title="ui-icon-image">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-video">
+						<div class="icon-name">
+							ui-icon-video
+						</div>
+						<span class="ui-icon ui-icon-video" title="ui-icon-video">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-video-b">
+						<div class="icon-name">
+							ui-icon-video-b
+						</div>
+						<span class="ui-icon ui-icon-video-b" title="ui-icon-video-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-contact-card">
+						<div class="icon-name">
+							ui-icon-contact-card
+						</div>
+						<span class="ui-icon ui-icon-contact-card" title="ui-icon-contact-card">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-cal">
+						<div class="icon-name">
+							ui-icon-cal
+						</div>
+						<span class="ui-icon ui-icon-cal" title="ui-icon-cal">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="tools">
+					<div>
+						<h3>Tools</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-edit">
+						<div class="icon-name">
+							ui-icon-edit
+						</div>
+						<span class="ui-icon ui-icon-edit" title="ui-icon-edit">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-cut">
+						<div class="icon-name">
+							ui-icon-cut
+						</div>
+						<span class="ui-icon ui-icon-cut" title="ui-icon-cut">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-cut-b">
+						<div class="icon-name">
+							ui-icon-cut-b
+						</div>
+						<span class="ui-icon ui-icon-cut-b" title="ui-icon-cut-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-save">
+						<div class="icon-name">
+							ui-icon-save
+						</div>
+						<span class="ui-icon ui-icon-save" title="ui-icon-save">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-print">
+						<div class="icon-name">
+							ui-icon-print
+						</div>
+						<span class="ui-icon ui-icon-print" title="ui-icon-print">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-trash">
+						<div class="icon-name">
+							ui-icon-trash
+						</div>
+						<span class="ui-icon ui-icon-trash" title="ui-icon-trash">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-lock">
+						<div class="icon-name">
+							ui-icon-lock
+						</div>
+						<span class="ui-icon ui-icon-lock" title="ui-icon-lock">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-unlock">
+						<div class="icon-name">
+							ui-icon-unlock
+						</div>
+						<span class="ui-icon ui-icon-unlock" title="ui-icon-unlock">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-filter">
+						<div class="icon-name">
+							ui-icon-filter
+						</div>
+						<span class="ui-icon ui-icon-filter" title="ui-icon-filter">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-phone">
+						<div class="icon-name">
+							ui-icon-phone
+						</div>
+						<span class="ui-icon ui-icon-phone" title="ui-icon-phone">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-phone-b">
+						<div class="icon-name">
+							ui-icon-phone-b
+						</div>
+						<span class="ui-icon ui-icon-phone-b" title="ui-icon-phone-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-smart-phone">
+						<div class="icon-name">
+							ui-icon-smart-phone
+						</div>
+						<span class="ui-icon ui-icon-smart-phone" title="ui-icon-smart-phone">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-zoom">
+						<div class="icon-name">
+							ui-icon-zoom
+						</div>
+						<span class="ui-icon ui-icon-zoom" title="ui-icon-zoom">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-zoom-out">
+						<div class="icon-name">
+							ui-icon-zoom-out
+						</div>
+						<span class="ui-icon ui-icon-zoom-out" title="ui-icon-zoom-out">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-mag-glass">
+						<div class="icon-name">
+							ui-icon-mag-glass
+						</div>
+						<span class="ui-icon ui-icon-mag-glass" title="ui-icon-mag-glass">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-wrench">
+						<div class="icon-name">
+							ui-icon-wrench
+						</div>
+						<span class="ui-icon ui-icon-wrench" title="ui-icon-wrench">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-cog">
+						<div class="icon-name">
+							ui-icon-cog
+						</div>
+						<span class="ui-icon ui-icon-cog" title="ui-icon-cog">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-link">
+						<div class="icon-name">
+							ui-icon-link
+						</div>
+						<span class="ui-icon ui-icon-edit" title="ui-icon-link">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-calculator">
+						<div class="icon-name">
+							ui-icon-calculator
+						</div>
+						<span class="ui-icon ui-icon-calculator" title="ui-icon-calculator">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-cart">
+						<div class="icon-name">
+							ui-icon-cart
+						</div>
+						<span class="ui-icon ui-icon-cart" title="ui-icon-cart">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-home">
+						<div class="icon-name">
+							ui-icon-home
+						</div>
+						<span class="ui-icon ui-icon-home" title="ui-icon-home">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-flag">
+						<div class="icon-name">
+							ui-icon-flag
+						</div>
+						<span class="ui-icon ui-icon-flag" title="ui-icon-flag">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bookmark">
+						<div class="icon-name">
+							ui-icon-bookmark
+						</div>
+						<span class="ui-icon ui-icon-bookmark" title="ui-icon-bookmark">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-heart">
+						<div class="icon-name">
+							ui-icon-heart
+						</div>
+						<span class="ui-icon ui-icon-heart" title="ui-icon-heart">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-star">
+						<div class="icon-name">
+							ui-icon-star
+						</div>
+						<span class="ui-icon ui-icon-star" title="ui-icon-star">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-comment">
+						<div class="icon-name">
+							ui-icon-comment
+						</div>
+						<span class="ui-icon ui-icon-comment" title="ui-icon-comment">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-comment">
+						<div class="icon-name">
+							ui-icon-comment
+						</div>
+						<span class="ui-icon ui-icon-comment" title="ui-icon-comment">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-tag">
+						<div class="icon-name">
+							ui-icon-tag
+						</div>
+						<span class="ui-icon ui-icon-tag" title="ui-icon-tag">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bag">
+						<div class="icon-name">
+							ui-icon-tag
+						</div>
+						<span class="ui-icon ui-icon-tag" title="ui-icon-tag">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-user">
+						<div class="icon-name">
+							ui-icon-user
+						</div>
+						<span class="ui-icon ui-icon-user" title="ui-icon-user">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-script">
+						<div class="icon-name">
+							ui-icon-script
+						</div>
+						<span class="ui-icon ui-icon-script" title="ui-icon-script">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-clock">
+						<div class="icon-name">
+							ui-icon-clock
+						</div>
+						<span class="ui-icon ui-icon-clock" title="ui-icon-clock">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-alarm">
+						<div class="icon-name">
+							ui-icon-alarm
+						</div>
+						<span class="ui-icon ui-icon-alarm" title="ui-icon-alarm">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-truck">
+						<div class="icon-name">
+							ui-icon-truck
+						</div>
+						<span class="ui-icon ui-icon-truck" title="ui-icon-truck">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-light">
+						<div class="icon-name">
+							ui-icon-light
+						</div>
+						<span class="ui-icon ui-icon-light" title="ui-icon-light">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-key">
+						<div class="icon-name">
+							ui-icon-key
+						</div>
+						<span class="ui-icon ui-icon-key" title="ui-icon-key">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pin">
+						<div class="icon-name">
+							ui-icon-pin
+						</div>
+						<span class="ui-icon ui-icon-pin" title="ui-icon-pin">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pin-b">
+						<div class="icon-name">
+							ui-icon-pin-b
+						</div>
+						<span class="ui-icon ui-icon-pin-b" title="ui-icon-pin-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-hourglass">
+						<div class="icon-name">
+							ui-icon-hourglass
+						</div>
+						<span class="ui-icon ui-icon-hourglass" title="ui-icon-hourglass">&nbsp;</span>&nbsp;
+					</div>
+				</section>
+				<section id="graphs">
+					<div>
+						<h3>Graphs</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-pie">
+						<div class="icon-name">
+							ui-icon-pie
+						</div>
+						<span class="ui-icon ui-icon-pie" title="ui-icon-pie">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-b">
+						<div class="icon-name">
+							ui-icon-pie-b
+						</div>
+						<span class="ui-icon ui-icon-pie-b" title="ui-icon-pie-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-c">
+						<div class="icon-name">
+							ui-icon-pie-c
+						</div>
+						<span class="ui-icon ui-icon-pie-c" title="ui-icon-pie-c">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-d">
+						<div class="icon-name">
+							ui-icon-pie-d
+						</div>
+						<span class="ui-icon ui-icon-pie-d" title="ui-icon-pie-d">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-e">
+						<div class="icon-name">
+							ui-icon-pie-e
+						</div>
+						<span class="ui-icon ui-icon-pie-e" title="ui-icon-pie-e">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-f">
+						<div class="icon-name">
+							ui-icon-pie-f
+						</div>
+						<span class="ui-icon ui-icon-pie-f" title="ui-icon-pie-f">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pie-g">
+						<div class="icon-name">
+							ui-icon-pie-g
+						</div>
+						<span class="ui-icon ui-icon-pie-g" title="ui-icon-pie-g">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-line">
+						<div class="icon-name">
+							ui-icon-line
+						</div>
+						<span class="ui-icon ui-icon-line" title="ui-icon-line">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bar">
+						<div class="icon-name">
+							ui-icon-bar
+						</div>
+						<span class="ui-icon ui-icon-bar" title="ui-icon-bar">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bar-b">
+						<div class="icon-name">
+							ui-icon-bar-b
+						</div>
+						<span class="ui-icon ui-icon-bar-b" title="ui-icon-bar-b">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="bullets">
+					<div>
+						<h3>Bullets & Symbols</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-no">
+						<div class="icon-name">
+							ui-icon-no
+						</div>
+						<span class="ui-icon ui-icon-no" title="ui-icon-no">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-caution">
+						<div class="icon-name">
+							ui-icon-caution
+						</div>
+						<span class="ui-icon ui-icon-caution" title="ui-icon-caution">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-plus-small">
+						<div class="icon-name">
+							ui-icon-plus-small
+						</div>
+						<span class="ui-icon ui-icon-plus-small" title="ui-icon-plus-small">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-plus">
+						<div class="icon-name">
+							ui-icon-plus
+						</div>
+						<span class="ui-icon ui-icon-plus" title="ui-icon-plus">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-minus-small">
+						<div class="icon-name">
+							ui-icon-minus-small
+						</div>
+						<span class="ui-icon ui-icon-minus-small" title="ui-icon-minus-small">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-minus">
+						<div class="icon-name">
+							ui-icon-minus
+						</div>
+						<span class="ui-icon ui-icon-minus" title="ui-icon-minus">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-x-small">
+						<div class="icon-name">
+							ui-icon-x-small
+						</div>
+						<span class="ui-icon ui-icon-x-small" title="ui-icon-x-small">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-x">
+						<div class="icon-name">
+							ui-icon-x
+						</div>
+						<span class="ui-icon ui-icon-x" title="ui-icon-x">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-warning">
+						<div class="icon-name">
+							ui-icon-warning
+						</div>
+						<span class="ui-icon ui-icon-warning" title="ui-icon-warning">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-alert">
+						<div class="icon-name">
+							ui-icon-alert
+						</div>
+						<span class="ui-icon ui-icon-alert" title="ui-icon-alert">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-exclaim">
+						<div class="icon-name">
+							ui-icon-exclaim
+						</div>
+						<span class="ui-icon ui-icon-exclaim" title="ui-icon-exclaim">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-question">
+						<div class="icon-name">
+							ui-icon-question
+						</div>
+						<span class="ui-icon ui-icon-question" title="ui-icon-question">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-check">
+						<div class="icon-name">
+							ui-icon-check
+						</div>
+						<span class="ui-icon ui-icon-check" title="ui-icon-check">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bullet">
+						<div class="icon-name">
+							ui-icon-bullet
+						</div>
+						<span class="ui-icon ui-icon-bullet" title="ui-icon-bullet">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bullet-b">
+						<div class="icon-name">
+							ui-icon-bullet-b
+						</div>
+						<span class="ui-icon ui-icon-bullet-b" title="ui-icon-bullet-b">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bullet-c">
+						<div class="icon-name">
+							ui-icon-bullet-c
+						</div>
+						<span class="ui-icon ui-icon-bullet-c" title="ui-icon-bullet-c">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="audio">
+					<div>
+						<h3>Audio Controls</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-play">
+						<div class="icon-name">
+							ui-icon-play
+						</div>
+						<span class="ui-icon ui-icon-play" title="ui-icon-play">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-pause">
+						<div class="icon-name">
+							ui-icon-pause
+						</div>
+						<span class="ui-icon ui-icon-pause" title="ui-icon-pause">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-ff">
+						<div class="icon-name">
+							ui-icon-ff
+						</div>
+						<span class="ui-icon ui-icon-ff" title="ui-icon-f">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-rw">
+						<div class="icon-name">
+							ui-icon-rw
+						</div>
+						<span class="ui-icon ui-icon-rw" title="ui-icon-rw">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-next">
+						<div class="icon-name">
+							ui-icon-next
+						</div>
+						<span class="ui-icon ui-icon-next" title="ui-icon-next">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-back">
+						<div class="icon-name">
+							ui-icon-back
+						</div>
+						<span class="ui-icon ui-icon-back" title="ui-icon-back">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-mute">
+						<div class="icon-name">
+							ui-icon-mute
+						</div>
+						<span class="ui-icon ui-icon-mute" title="ui-icon-mute">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-volume-uo">
+						<div class="icon-name">
+							ui-icon-volume-up
+						</div>
+						<span class="ui-icon ui-icon-volume-up" title="ui-icon-volume-up">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+				<section id="Power">
+					<div>
+						<h3>Power</h3>
+						<a class="top-link" href="#home">Top</a>
+					</div>
+					<div class="icon-container" id="ui-icon-power">
+						<div class="icon-name">
+							ui-icon-power
+						</div>
+						<span class="ui-icon ui-icon-power" title="ui-icon-power">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-rss">
+						<div class="icon-name">
+							ui-icon-rss
+						</div>
+						<span class="ui-icon ui-icon-rss" title="ui-icon-rss">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-signal">
+						<div class="icon-name">
+							ui-icon-signal
+						</div>
+						<span class="ui-icon ui-icon-signal" title="ui-icon-signal">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-battery">
+						<div class="icon-name">
+							ui-icon-battery
+						</div>
+						<span class="ui-icon ui-icon-battery" title="ui-icon-battery">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-battery-low">
+						<div class="icon-name">
+							ui-icon-battery-low
+						</div>
+						<span class="ui-icon ui-icon-battery-low" title="ui-icon-battery-low">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-battery-high">
+						<div class="icon-name">
+							ui-icon-battery-high
+						</div>
+						<span class="ui-icon ui-icon-battery-high" title="ui-icon-battery-high">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-battery-full">
+						<div class="icon-name">
+							ui-icon-battery-full
+						</div>
+						<span class="ui-icon ui-icon-battery-full" title="ui-icon-battery-full">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-bolt">
+						<div class="icon-name">
+							ui-icon-bolt
+						</div>
+						<span class="ui-icon ui-icon-bolt" title="ui-icon-bolt">&nbsp;</span>&nbsp;
+					</div>
+					<div class="icon-container" id="ui-icon-power-plug">
+						<div class="icon-name">
+							ui-icon-power-plug
+						</div>
+						<span class="ui-icon ui-icon-power-plug" title="ui-icon-power-plug">&nbsp;</span>&nbsp;
+					</div>
+					&nbsp;
+				</section>
+			</section>
+			&nbsp;
+			<div class="clear"></div>
+			&nbsp;
+			<footer>
+				&nbsp;
+				<p>
+					Thanks for playing!
+				</p>
+				&nbsp;
+			</footer>
+		</div>
+	</body>
+</html>
