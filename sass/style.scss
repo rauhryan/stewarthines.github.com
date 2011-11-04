@@ -1,17 +1,35 @@
 *{padding:0; margin:0;}
 
+/* HTML Elements */
+$bg-noise:url('noise.jpg') repeat top left;
+$bg-color:#efefef;
+$bg-color-dark:#cfcfcf;
+$shadow:inset 0 -1px 0 #fff, 0 3px 8px #aaa;
+$border:1px solid #ccc;
+
+/* Text Elements */
+$text-color:#666666;
+$text-color-dark:#333333;
+$text-shadow:0 1px 0 #ffffff;
+/*Sample Mixins*/
+
+
+body{font-size:14px; color:#666; background:$bg-noise;}
+
 #box{
-	-webkit-box-shadow:0 3px 8px #aaa;
-	-webkit-box-shadow:inset 0 -1px 0 #fff, 0 3px 8px #aaa;
+
+	-webkit-box-shadow:$shadow;
 	text-align:center;
 	text-shadow: 0 1px 0 #fff;
-	border:1px solid #ccc;
+	border:$border;
 	margin:40px auto;
 	padding:20px;
-	color:#666666;
+	color:$text-color;
 	width:200px;
 	height:200px;
-	background-color:#efefef;
+	background-color:$bg-color;
+
+
 	
 	h1{
 		font-family:"Helvetica", "Arial", sans-serif; 
@@ -20,7 +38,7 @@
 	
 	p{
 		font-size:.9em;
-		color:#333;
+		color:$text-color-dark;
 		line-height:1.2em;
 	}
 
@@ -28,29 +46,24 @@
 
 .bar{
 	width:100%;
-	background:#f1f1f1;
-	border:1px solid #ccc;
-	-webkit-box-shadow:inset 0 -1px 0 #fff, 0 3px 8px #aaa;
+	background:$bg-color;
+	border:$border;
+	-webkit-box-shadow:$shadow;
 	padding:10px;
 	
 	section{
 		margin:auto;
-		color:#333;
-		text-shadow:0 1px 0 #fff;
+		color:$text-color-dark;
+		text-shadow:$text-shadow;
 		text-align:center;
 		
 		nav a{
 			font-style:italic;
 			padding: 10px;
 			text-decoration:none;
-			color:#333;
-		
-		}
-		
-		nav a:hover{
-			color:#666;
+			color:$text-color-dark;
+			&:hover{color:$text-color;}
 		
 		}
 	}
-
 }
