@@ -11,7 +11,35 @@ $border:1px solid #ccc;
 $text-color:#666666;
 $text-color-dark:#333333;
 $text-shadow:0 1px 0 #ffffff;
-/*Sample Mixins*/
+
+/*UI State Colors*/
+//Colors start from the lightest to the darkest
+//Defautlt - Gray
+$ui-default-color-0:#ffffff;
+$ui-default-color-1:#efefef;
+$ui-default-color-2:#cccccc;
+$ui-default-color-3:#888888;
+$ui-default-color-4:#666666;
+$ui-default-color-5:#333333;
+$ui-default-color-6:#121212;
+//Disabled - opacity.7
+.ui-state-disabled{opacity:0.7;}
+//Error - Red
+$ui-error-color-1:#ffe8e4;
+$ui-error-color-2:#e14c2f;
+$ui-error-color-3:#8e1903;
+//Execute - Blue
+$ui-execute-color-0:#cce5ff;
+$ui-execute-color-1:#7bbdff;
+$ui-execute-color-2:#2a94fe;
+$ui-execute-color-3:#1c62a9;
+//Highlight - Yellow
+
+//Success - Green
+
+//Waiting - Animated Giff
+
+ 
 
 
 body{font-size:14px; color:#666; background:$bg-noise;}
@@ -67,3 +95,60 @@ body{font-size:14px; color:#666; background:$bg-noise;}
 		}
 	}
 }
+
+
+
+
+.container{
+	width:250px;
+	margin:0 auto;
+
+}
+//ui-state-default / no ui-state
+.ui-widget, .ui-widget.ui-state-default{
+	
+	background:$bg-color;
+	text-shadow:$text-shadow;
+	box-shadow:$shadow;
+	color:$text-color;
+	font-family:sans-serif;
+	border:1px solid #ccc;
+	text-shadow:none;
+	.ui-widget-content{
+		background:#ffffff;
+		border:none;
+		padding:10px;
+	}
+	.ui-widget-head{
+		background-color:$bg-color-dark;
+		text-shadow:none;
+		color:#fff;
+		padding:3px;
+	}
+}
+// ui-state-error
+.ui-widget.ui-state-error{
+	border-color:$ui-error-color-2;
+	.ui-widget-head{
+		background-color:$ui-error-color-2;
+	}
+	.ui-widget-content{
+		background-color:$ui-error-color-1;
+	}
+}
+//ui-state-execute
+.ui-widget.ui-state-execute{
+	border-color:$ui-execute-color-2;
+	.ui-widget-head{
+		background-color:$ui-execute-color-2;
+	}
+	.ui-widget-content{
+		background-color:$ui-default-color-0;
+	}
+}
+
+
+
+
+
+
