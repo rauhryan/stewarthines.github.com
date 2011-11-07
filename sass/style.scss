@@ -13,7 +13,7 @@ $text-color-dark:#333333;
 $text-shadow:0 1px 0 #ffffff;
 
 /*UI State Colors*/
-//Colors start from the lightest to the darkest
+//Base Color is 0, colors range from light (1) to dark (4)
 //Defautlt - Gray
 $ui-default-color-0:#ffffff;
 $ui-default-color-1:#efefef;
@@ -25,88 +25,39 @@ $ui-default-color-6:#121212;
 //Disabled - opacity.7
 .ui-state-disabled{opacity:0.7;}
 //Error - Red
-$ui-error-color-1:#ffe8e4;
-$ui-error-color-2:#e14c2f;
-$ui-error-color-3:#8e1903;
+$ui-error-color-0:#e14c2f;
+$ui-error-color-1:lighten($ui-error-color-0,40%);
+$ui-error-color-2:lighten($ui-error-color-0,20%);
+$ui-error-color-3:darken($ui-error-color-0,18%);
+$ui-error-color-4:darken($ui-error-color-0,40%);
 //Execute - Blue
-$ui-execute-color-0:#cce5ff;
-$ui-execute-color-1:#7bbdff;
-$ui-execute-color-2:#2a94fe;
-$ui-execute-color-3:#1c62a9;
+$ui-execute-color-0:#2a94fe;
+$ui-execute-color-1:lighten($ui-execute-color-0,40%);
+$ui-execute-color-2:lighten($ui-execute-color-0,20%);
+$ui-execute-color-3:darken($ui-execute-color-0,18%);
+$ui-execute-color-4:darken($ui-execute-color-0,40%);
 //Highlight - Yellow
-
+$ui-highlight-color-0:#ffdd9e;
+$ui-highlight-color-1:lighten($ui-highlight-color-0,18%);
+$ui-highlight-color-2:lighten($ui-highlight-color-0,10%);
+$ui-highlight-color-3:darken($ui-highlight-color-0,18%);
+$ui-highlight-color-4:darken($ui-highlight-color-0,40%);
 //Success - Green
-
-//Waiting - Animated Giff
-
- 
+$ui-success-color-0:#58a94e;
+$ui-success-color-1:lighten($ui-success-color-0,40%);
+$ui-success-color-2:lighten($ui-success-color-0,20%);
+$ui-success-color-3:darken($ui-success-color-0,10%);
+$ui-success-color-4:darken($ui-success-color-0,20%);
+//Waiting - Will be an animated Giff
 
 
 body{font-size:14px; color:#666; background:$bg-noise;}
-
-#box{
-
-	-webkit-box-shadow:$shadow;
-	text-align:center;
-	text-shadow: 0 1px 0 #fff;
-	border:$border;
-	margin:40px auto;
-	padding:20px;
-	color:$text-color;
-	width:200px;
-	height:200px;
-	background-color:$bg-color;
-
-
-	
-	h1{
-		font-family:"Helvetica", "Arial", sans-serif; 
-		margin-bottom:30px;
-	}
-	
-	p{
-		font-size:.9em;
-		color:$text-color-dark;
-		line-height:1.2em;
-	}
-
-}
-
-.bar{
-	width:100%;
-	background:$bg-color;
-	border:$border;
-	-webkit-box-shadow:$shadow;
-	padding:10px;
-	
-	section{
-		margin:auto;
-		color:$text-color-dark;
-		text-shadow:$text-shadow;
-		text-align:center;
-		
-		nav a{
-			font-style:italic;
-			padding: 10px;
-			text-decoration:none;
-			color:$text-color-dark;
-			&:hover{color:$text-color;}
-		
-		}
-	}
-}
-
-
-
-
-.container{
-	width:250px;
-	margin:0 auto;
-
-}
+#box{-webkit-box-shadow:$shadow;text-align:center;text-shadow: 0 1px 0 #fff;border:$border;margin:40px auto;padding:20px;color:$text-color;width:200px;height:200px;background-color:$bg-color;h1{font-family:"Helvetica", "Arial", sans-serif;margin-bottom:30px;}p{font-size:.9em;color:$text-color-dark;line-height:1.2em;}}
+.bar{width:100%;background:$bg-color;border:$border;-webkit-box-shadow:$shadow;padding:10px;section{margin:auto;color:$text-color-dark;text-shadow:$text-shadow;text-align:center;nav a{font-style:italic;padding: 10px;text-decoration:none;color:$text-color-dark;&:hover{color:$text-color;}}}}
+.container{width:250px;margin:0 auto;}
+/*ui-widget & ui-states */
 //ui-state-default / no ui-state
 .ui-widget, .ui-widget.ui-state-default{
-	
 	background:$bg-color;
 	text-shadow:$text-shadow;
 	box-shadow:$shadow;
@@ -126,26 +77,14 @@ body{font-size:14px; color:#666; background:$bg-noise;}
 		padding:3px;
 	}
 }
-// ui-state-error
-.ui-widget.ui-state-error{
-	border-color:$ui-error-color-2;
-	.ui-widget-head{
-		background-color:$ui-error-color-2;
-	}
-	.ui-widget-content{
-		background-color:$ui-error-color-1;
-	}
-}
-//ui-state-execute
-.ui-widget.ui-state-execute{
-	border-color:$ui-execute-color-2;
-	.ui-widget-head{
-		background-color:$ui-execute-color-2;
-	}
-	.ui-widget-content{
-		background-color:$ui-default-color-0;
-	}
-}
+/*ui-state-error*/
+.ui-widget.ui-state-error{border-color:$ui-error-color-0;.ui-widget-head{background-color:$ui-error-color-0;}.ui-widget-content{background-color:$ui-error-color-1;}}
+/*ui-state-execute*/
+.ui-widget.ui-state-execute{border-color:$ui-execute-color-2;.ui-widget-head{background-color:$ui-execute-color-3;}.ui-widget-content{background-color:$ui-default-color-0;}}
+/*ui-state-highlight*/
+.ui-widget.ui-state-highlight{border-color:$ui-highlight-color-0;.ui-widget-head{background-color:$ui-highlight-color-0;color:$ui-highlight-color-4;}.ui-widget-content{background-color:$ui-highlight-color-1;}}
+/*ui-state-sucess*/
+.ui-widget.ui-state-success{border-color:$ui-success-color-0;.ui-widget-head{background-color:$ui-success-color-0;}.ui-widget-content{background-color:$ui-default-color-0;}}
 
 
 

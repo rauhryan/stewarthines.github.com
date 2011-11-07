@@ -55,6 +55,7 @@ body {
   width: 250px;
   margin: 0 auto; }
 
+/*ui-widget & ui-states */
 .ui-widget, .ui-widget.ui-state-default {
   background: #efefef;
   text-shadow: 0 1px 0 white;
@@ -73,16 +74,35 @@ body {
     color: #fff;
     padding: 3px; }
 
+/*ui-state-error*/
 .ui-widget.ui-state-error {
   border-color: #e14c2f; }
   .ui-widget.ui-state-error .ui-widget-head {
     background-color: #e14c2f; }
   .ui-widget.ui-state-error .ui-widget-content {
-    background-color: #ffe8e4; }
+    background-color: #fbe5e1; }
 
+/*ui-state-execute*/
 .ui-widget.ui-state-execute {
-  border-color: #2a94fe; }
+  border-color: #90c7fe; }
   .ui-widget.ui-state-execute .ui-widget-head {
-    background-color: #2a94fe; }
+    background-color: #0166cb; }
   .ui-widget.ui-state-execute .ui-widget-content {
+    background-color: white; }
+
+/*ui-state-highlight*/
+.ui-widget.ui-state-highlight {
+  border-color: #ffdd9e; }
+  .ui-widget.ui-state-highlight .ui-widget-head {
+    background-color: #ffdd9e;
+    color: #d18800; }
+  .ui-widget.ui-state-highlight .ui-widget-content {
+    background-color: #fffdfa; }
+
+/*ui-state-sucess*/
+.ui-widget.ui-state-success {
+  border-color: #58a94e; }
+  .ui-widget.ui-state-success .ui-widget-head {
+    background-color: #58a94e; }
+  .ui-widget.ui-state-success .ui-widget-content {
     background-color: white; }
