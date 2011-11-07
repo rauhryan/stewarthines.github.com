@@ -10,24 +10,11 @@
 		<section>
 			<nav>
 				<a href="../index.html">Home</a>
-				<a href="#">Cool Nav Link</a>
-				<a href="#">Sweet Nav Link</a>
-				<a href="#">Amazing Nav link</a>
-				<a href="#">OK Nav Link</a>
-				<a href="#">Crappy Nav Link</a>
 			</nav>
 		</section>
 	</div>
-	<div id="box">
-		<h1>I'mma Box!</h1>
-		<p>
-			I was built using SASS because I don't want to be one of Rauh's LESS creations.
-		</p>
-	</div>
-	<br />
-	&nbsp;
 	<div class="container">
-		<div class="ui-widget ui-state-success">
+		<div class="ui-widget ui-state-default">
 			<div class="ui-widget-head">
 				<h1>Widget</h1>
 			</div>
@@ -37,6 +24,27 @@
 				</p>
 			</div>
 		</div>
+	</div>
+	<div id="instructions">
+		<h3>Instructions:</h3>
+		<p>
+			To see just what the heck to do:
+			<ol>
+				<li>Right Click the Widget</li>
+				<li>Inspect Element</li>
+				<li>locate the div with class names "ui-widget ui-state-default"</li>
+				<li>change "ui-state-default" to "error", "exectue", "highlight", or "success."</li>
+				<li>In addition, you can also add the class "ui-state-disabled" to disable the widget</li>
+			</ol>
+			<p>
+				Sounds fun huh? Get started today!
+			</p>
+			<section>
+				<p>
+					So how'd I use SASS to do this? Simple. I defined all my colors once. I then used lighten & darken to lighten & darken them. From there i built the widget in state-default. Once that was done it was simply a matter of changing the colors. Easy as pie. Now dream with me for a second about JavaScript changing those classes on the fly as users interact with widget and widget components. We've done all the style work once but the app interacts with the user in a beautiful tangoish dance of love and style. This is why SASS + jQuery UI == awesome sauce!   
+				</p>
+			</section>
+		</p>
 	</div>
 	
 </body
