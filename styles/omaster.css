@@ -1,0 +1,58 @@
+/*resets & general bull crap*/
+*{margin:0; padding:0;}
+html{background:#fff;}
+body{font-family:'Helvetica', 'Arial', sans-serif; font-size:14px; line-height:24px; color:#333;}
+#home{margin-top:40px;}
+a{text-decoration:none; font-weight:bold;}
+/*nav*/
+#navHome{height:45px; background:#222; border-bottom:1px solid #888; -webkit-box-shadow:0px 3px 4px #888;
+   -moz-box-shadow:0px 3px 4px #888; 
+        box-shadow:0px 3px 4px #888;}
+a #logo {text-decoration:none;}
+#logo h3{padding-top:8px; color:#fff;}
+#logo h3:hover{opacity:.8;}
+nav{padding:8px; float:right;}
+nav a {color:#888; padding:20px 20px 3px 20px;}
+nav a:hover{background:#323232; border-bottom:14px solid #e14c2f; color:#ccc; }
+.active{background:#323232; border-bottom:14px solid #2a94fe; color:#fff; }
+/*text - specific elements*/
+h1,h2,h3,h4,h5 {font-weight:bold; font-color:#333; margin-bottom:20px;}
+h6{margin-bottom:5px;}
+h1{font-size:40px;}
+h2{font-size:30px;}
+h3{font-size:25px;}
+h4{font-size:20px;}
+h5{font-size:18px;}
+h6{font-size:14px;}
+h1.blue, h2.blue, h3.blue, h4.blue, h5.blue, h6.blue{color:#0b4670;}
+h1.red, h2.red, h3.red, h4.red, h5.red, h6.red{color:#b4012b;}
+
+/*Fancy Basic Input Styles*/
+input{border:1px solid #ccc; padding:7px; color:#888; font-size:12px; line-height:1; width:100%; margin:10px 0;
+-webkit-transition-property:border-color;
+-webkit-transition-duration:0.8s;
+-webkit-transition-timing-function:ease;}
+input:hover{border-color:#666; -webkit-box-shadow:0px 0px 5px #ccc;}
+input:focus{border-color:#5CA8E7; outline:none; -webkit-box-shadow:0px 0px 7px #78C5EC; }
+::-webkit-input-placeholder { color:#ccc; font-style:italic; }
+
+/*index*/
+#side{margin-top:30px; }
+#opening {margin-top:70px;}
+#sideNavContainer{position:absolute; display:inline-block;}
+.sideNav {list-style:none; margin-top:10px;padding-left:15px; position:relative; }
+.sideNav li {padding:5px 0;  opacity:1;}
+.sideNav li a:hover{opacity:.9;}
+
+#big{font-size:80px; font-weight:normal; color:#888;}
+#opening p {font-size:18px; line-height:32px; color:#888; padding-top:30px;}
+#title {font-weight:normal; color:#888; text-align:center; padding-bottom:20px;}
+#work a {opacity:.6;}
+#work a:hover{opacity:1;}
+#top {padding-top:20px;}
+#bottom {padding-top:20px;}
+
+
+
+
+

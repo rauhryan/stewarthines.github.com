@@ -1,0 +1,170 @@
+*{margin:0; padding:0;}
+//Variables
+//Colors
+$white:#ffffff;
+$light-gray-1:#cccccc;
+$light-gray-2:#888888;
+$gray:#666666;
+$dark-gray-1:#323232;
+$dark-gray-2:#222222;
+$black:#121212;
+$blue:#2a94fe;
+$green:#39b54a;
+$red:#e14c2f;
+
+//Elements
+body{
+	color:$dark-gray-1;
+	font-family:'Helvetica', 'Arial', sans-serif; 
+	font-size:14px; 
+	line-height:24px; 
+	a {
+		text-decoration:none;
+		color:$blue;
+		}
+	a:hover{color:$red;}
+	a:visited{color:$green;}
+	h1,h2,h3,h4 {font-weight:bold; margin-bottom:20px;}
+	h5, h6{margin-bottom:5px;}
+}
+//Nav
+#navHome{
+	height:45px; 
+	background:$dark-gray-2; 
+	border-bottom:1px solid $light-gray-2;
+	-webkit-box-shadow:0px 3px 4px $light-gray-2;
+	   -moz-box-shadow:0px 3px 4px $light-gray-2; 
+	        box-shadow:0px 3px 4px $light-gray-2;
+	margin-bottom:40px;
+	#logo{
+		color:$white;
+		font-size:1.5em;
+		padding-top:8px; 
+		text-decoration:none;
+		h3{
+			margin-bottom:0;
+			margin-top:10px;
+			}
+		h3:hover{opacity:0.9;}
+		}
+	nav{
+		float:right;
+		padding:8px; 
+		a{
+			color:$light-gray-2; 
+			padding:20px 20px 3px 20px;
+		}
+		a:hover{
+			background:$dark-gray-1; 
+			border-bottom:14px solid $red; 
+			color:#ccc; 
+		}
+		a.active{
+			background:$dark-gray-1; 
+			border-bottom:14px solid $blue; 
+			color:#fff;
+		}
+
+	}
+}
+#footer{
+	color:$light-gray-1;
+	font-size:.9em;
+	margin:20px auto;
+	text-align:center;
+}
+//Front Page Content
+#side{
+	display:inline-block;
+	margin:0 auto;
+	text-align:center;
+	ul{
+		list-style:none;
+		li{margin:10px 0;}
+		li a:hover{opacity:0.5;}
+		}
+	
+}
+#opening{
+	color:$light-gray-2;
+	h1{
+		font-size:5em;
+		margin-bottom:40px;
+	}
+	p{
+		font-size:1.5em;
+		line-height:1.5em;
+		margin-bottom:2.3em;
+	}
+}
+#title{
+	color:$light-gray-1;
+	font-size:1.8em;
+	padding-bottom:1.8em;
+	margin:0 auto;
+	text-align:center;
+}
+
+#work{
+	a{
+		-webkit-transition-property:opacity;
+		-webkit-transition-duration:0.6s;
+		-webkit-transition-timing-function:ease;
+		opacity:0.5;}
+	a:hover{opacity:1.0;}
+	div{
+		padding-bottom:10px;
+	}
+}
+
+//Lessons
+#lessons{
+	color:$light-gray-2;
+	h1{
+		
+		font-size:5em;
+		margin-bottom:40px;
+		margin-top:20px;
+	}
+	p{
+		font-size:1.5em;
+		line-height:1.5em;
+		padding-bottom:20px;
+	}
+	#readMore{
+		color:$gray;
+		font-size:.8em;
+	}
+	
+}
+#contents{
+	p{
+		color:$light-gray-2;
+		margin-bottom:5px;
+		margin-top:20px;
+		text-weight:bold;
+
+	}
+	h3{
+		margin-bottom:10px;
+	}
+	.minor{
+		font-size:.9em;
+		margin-top:0;
+	}
+	ul{list-style:none;}
+	li{
+		border-bottom:3px solid $white;
+		padding:5px 0;
+		}
+	li a{
+		padding:9px 49px 9px 0;
+	}
+	#together li:hover{
+		border-bottom:3px solid $green;
+	}
+	
+	#proverbs li:hover{
+		border-bottom:3px solid $red;
+	}
+}
