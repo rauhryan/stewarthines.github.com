@@ -1,0 +1,111 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+//---Colors
+$bg-dark:#2F2F2F;
+$blue:#2a94fe;
+$gold:#f7941d;
+$gray:#eeeeee;
+$red:#e14c2f;
+$white:#ffffff;
+@mixin chunk{font-family: 'ChunkFiveRegular';}
+@mixin question-title{font-size:100px; color:$blue;@include text-shadow; @include chunk; margin-top:40px;}
+@mixin question{font-size:30pt; line-height:50px; color:$white; @include text-shadow; @include chunk;}
+@mixin answer-title{font-size:100px; color:$gold; @include text-shadow; @include chunk; margin-top:40px;}
+@mixin answer {font-size:30pt; font-size:30pt; line-height:50px; color:$gold; @include text-shadow; @include chunk;}
+//---Effects & Whatnot ---
+@mixin text-shadow{
+	text-shadow:0 5px 5px rgba(0,0,0,0.8);
+}
+@mixin text-shadow-hover{
+	text-shadow: 0 8px 10px #000000;
+}
+@mixin divider {
+	border-bottom:1px solid #444444;
+	-webkit-box-shadow:inset 0px -2px 0px rgba(0,0,0,1.0);
+	-moz-box-shadow:inset 0px -2px 0px rgba(0,0,0,1.0); 
+	box-shadow:inset 0px -2px 0px rgba(0,0,0,1.0);
+	padding-bottom:40px;
+}
+//---Styles
+
+body{
+	background:url(images/bg.jpg);
+	background-color:$bg-dark;
+	color:$gray;
+	font-family:"Helvetica", "Arial", sans-serif;
+	font-size:14px;
+	line-height:24px;
+}
+#wrapper{
+	margin-top:50px;
+}
+#wrapper:after{clear: both;}
+	h1{
+		font-size:50px;
+		color:$red;
+		@include chunk;
+		@include divider;
+		@include text-shadow;
+		text-align:center;
+		&:hover{@include text-shadow-hover;}
+		a{
+			text-decoration:none;
+			color:$red;
+			&:hover{@include text-shadow-hover;}
+			&:active{color:$gold;}
+		}
+	}
+	.question{
+		margin-top:40px;
+ 		h2{
+			@include question-title;
+		}
+		p{
+			@include question;
+		
+		}
+		nav{
+//			@include divider;
+			margin-top:30px;
+			text-align:center;
+			 a{
+				color:$gray;
+				font-weight:bold;
+				font-size:14px;
+				padding:5px 30px;
+				text-decoration:none;
+				@include text-shadow;
+				&:hover{color:$red; @include text-shadow-hover;}
+				&:active{color:$gold;}
+			}
+		}			
+	}
+	.answer{
+		margin-top:40px;
+		@include divider;
+		h2{
+			@include answer-title;
+		}
+		p{
+			@include answer;
+		}
+	}
+	footer{
+		margin-top:40px;
+		text-align:center;
+		@include text-shadow;
+		color:$gray;
+		a{
+			color:$red;
+			text-decoration:none;
+			font-weight:bold;
+			&:hover{
+				@include text-shadow-hover;
+				color:$gold;
+			}
+			}
+	}
