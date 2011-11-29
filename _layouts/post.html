@@ -3,8 +3,27 @@
     active: blog
 ---
 
-<div class="container_12" id="name">
-	<div class="grid_12">
-    {{ content }}
-	</div>
+<div class="post" id='post'>
+  <h1><a href='{{ post.url }}'>{{ page.title }}</a></h1>
+  <p class='meta'>
+    {{ page.date | date: '%Y-%m-%d' }}
+    {% unless page.tags == empty %}
+      (<strong>{{ page.tags | join: '</strong>, <strong>' }}</strong>)
+    {% endunless %}
+  </p>
+  {{ content }}
 </div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://stewarthinesblog.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=stewarthinesblog">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
